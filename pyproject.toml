@@ -1,0 +1,9 @@
+[project]
+name = "black-hat-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.7.5"
+dependencies = [
+    "lxml>=5.4.0",
+]
