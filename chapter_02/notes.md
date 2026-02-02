@@ -45,3 +45,16 @@
     - `epilog` contains the text that will be shown when the user uses `--help`.
 - > Remember that the script reads from stdin and will do so until it receives the end-of-file (EOF) marker. To send EOF, press CTRL-D on your keyboard:...
     - For Windows, you send EOF by triggering `CTRL-Z`+`Enter`.
+
+## Building a TCP Proxy
+[[proxy.py](proxy.py)]
+- Building a TCP Proxy will be useful when you are in environments where you cannot load tools like Wireshark, or anything that requires loading drivers to sniff loopback.
+- The proxy has 4 main functions:
+    - `hexdump()`: display communication to the console
+    - `receive_from()`: receive data from an incoming socket
+    - `proxy_handler()`: manage traffic
+    - `server_loop()`: setup a listening socker and pass it to `proxy_handler()`
+- `[(len(repr(chr(i))) == 3) and chr(i) or "." for i in range(256)]`
+    - This works based on 2 rules of how Python works:
+        1. Boolean expressions return one of their operands rather than a boolean value.
+        2. Python lazily evaluates if-expressions.  
