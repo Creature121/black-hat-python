@@ -33,6 +33,7 @@ The gist of this chapter is:
         - After a long time, I found out about [Astral's Standalone Python Builds](https://github.com/astral-sh/python-build-standalone).
             - And it had [a build of Python 3.7.5](https://github.com/astral-sh/python-build-standalone/releases/tag/20191025)
             - So I downloaded, tested it (it works I believe), placed it in my bin folder, and added it to my PATH.
+    - For Windows, use the [Python Install Manager](https://www.python.org/downloads/release/pymanager-252/), honestly the easiest way...
 3. Then I installed VSCode.
     - This was the only easy step.
     - [Downloaded it from the site](https://code.visualstudio.com/download), installed it, ran it.

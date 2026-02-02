@@ -31,3 +31,17 @@
 
 ## TCP Server
 [[tcp_server.py](tcp_server.py)]
+
+## Replacing Netcat
+[[netcat.py](netcat.py)]
+- > Netcat is the utility knife of networking...
+    - > With it, you can read and write data across the network, meaning you can use it to execute remote commands, pass files back and forth, or even open a remote shell.
+- `subprocess` library
+    - > ...provides a powerfulprocess-creation interface that gives you a number of ways to interact with client programs.
+    - check_ouput()
+        - > ...runs a command on the local operating system and then returns the output from that command.
+- `argparse` module
+    - helps in creating a cmd interface.
+    - `epilog` contains the text that will be shown when the user uses `--help`.
+- > Remember that the script reads from stdin and will do so until it receives the end-of-file (EOF) marker. To send EOF, press CTRL-D on your keyboard:...
+    - For Windows, you send EOF by triggering `CTRL-Z`+`Enter`.
