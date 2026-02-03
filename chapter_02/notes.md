@@ -57,4 +57,13 @@
 - `[(len(repr(chr(i))) == 3) and chr(i) or "." for i in range(256)]`
     - This works based on 2 rules of how Python works:
         1. Boolean expressions return one of their operands rather than a boolean value.
-        2. Python lazily evaluates if-expressions.  
+        2. Python lazily evaluates if-expressions.
+
+## SSH with Paramiko
+[[ssh_cmd.py](ssh_cmd.py), [ssh_rcmd.py](ssh_rcmd.py), [ssh_server.py](ssh_server.py)]
+- > In Python, you could use raw sockets and some crypto magic to create your own SSH client or server
+    - > but why create when you can reuse?
+        - > Paramiko, which uses PyCrypto, gives you simple access to the SSH2 protocol.
+- > We’ll use some of the demo files later, so make sure you download them from the Paramiko GitHub repo as well...
+    - So I have downloaded [them](chapter_02/demos).
+- Need to study `paramiko` module more deeply.
