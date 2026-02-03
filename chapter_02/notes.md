@@ -67,3 +67,13 @@
 - > We’ll use some of the demo files later, so make sure you download them from the Paramiko GitHub repo as well...
     - So I have downloaded [them](chapter_02/demos).
 - Need to study `paramiko` module more deeply.
+
+## SSH Tunneling
+[[rforward.py](demos/rforward.py)]
+- Basically, rather than tunneling in plaintext, we use SSH to tunnel.
+    - `paramiko` makes this easy.
+- We gain access to system A, but we want system B.
+    - We can't directly access B, but A can. But A doesn't have the tools we need.
+        - So we do a reverse SSH connection to our box, and tunnel our commands to B through A.
+            - We basically forward a local port to the remote port of A, in order to access B.
+            - [rforward.py](demos/rforward.py), from what we donwloaded earlier, implements this well, so there is nothing to code here.
