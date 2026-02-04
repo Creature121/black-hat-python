@@ -6,3 +6,4 @@ This repository contains the various notes and scripts I write based on the book
 - [Chapter 01 Notes](chapter_01/notes.md)
 - [Chapter 02 Notes](chapter_02/notes.md)
 - [Chapter 03 Notes](chapter_03/notes.md)
+- [Chapter 04 Notes](chapter_04/notes.md)

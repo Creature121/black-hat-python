@@ -32,10 +32,10 @@
         - > while the struct module primarily handles binary data.
 
 ### The `ctypes` Module
-[[IP_ctypes.py](IP_ctypes.py)]
+[[ip_ctypes.py](ip_ctypes.py)]
 
 ### The `struct` Module
-[[IP_struct.py](IP_struct.py)]
+[[ip_struct.py](ip_struct.py)]
 - "<BBHHHBBH4s4s"
     - '<' => endianness.
         - little endian => least significant byte is stored in the lower address
