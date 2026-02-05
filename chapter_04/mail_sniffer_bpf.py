@@ -1,7 +1,8 @@
-from scapy.all import Packet, sniff, TCP, IP # type: ignore
+from scapy.all import Packet, sniff, TCP, IP  # type: ignore
 
 
 def packet_callback(packet: Packet):
+    # print("Got packet!")
     if packet[TCP].payload:
         my_packet = str(packet[TCP].payload)
 
@@ -12,6 +13,7 @@ def packet_callback(packet: Packet):
 
 def main():
     sniff(
+        iface="eth1",
         filter="tcp port 110 or tcp port 25 or tcp port 143",
         prn=packet_callback,
         store=0,
