@@ -19,9 +19,18 @@
 ### The `lxml` and `BeautifulSoup` Packages
 [[request_lxml.py](request_lxml.py), [request_bs4.py](request_bs4.py)]
 
-## Managing Open Source Web App Installations
-### Mapping the WordPress Framework
+## Mapping the WordPress Framework
 [[mapper.py](mapper.py)]
 - > Download and unzip a local copy of WordPress.
     - > Here, we’re using version 5.4 of WordPress.
         - which I have done so.
+- "http://boodelyboo.com/" does not work anymore...
+
+## Bruteforcing Directories and File Locations
+- Spiders for crawling and discovering as much of the web app as possible.
+- But we want to find any bit of info...
+    - > ...that can provide sensitive information or expose functionality that the software developer did not intend.
+- > For this example, we’ll use a list from SVNDigger.
+    - Which I have [downloaded](chapter_05/all.txt).
+        - Their link didn't work, I go it from this [github repo](https://github.com/nathanmyee/SVNDigger).
+- "http://testphp.vulnweb.com" is a working site!
