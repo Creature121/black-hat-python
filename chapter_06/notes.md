@@ -26,4 +26,14 @@
     - and then our custom fuzzer: `mutate_payload()`
 
 ## Use Bing for Burp
- 
+[[bhp_bing.py](bhp_bing.py)]
+- > It’s not uncommon for a single web server to serve several web applications, some of which you might not be aware of.
+    - > Microsoft’s Bing search engine has search capabilities that allow you to query Bing for all websites it finds on a single IP address using the “IP” search modifier.
+        - > Bing will also tell you all of the subdomains of a given domain if you use the “domain” search modifier.
+- We'll be using the Bing API for this:
+    - > (Visit https://www.microsoft.com/en-us/bing/apis/bing-web-search-api/ to get set up with your own free Bing API key.)
+        - Unfortunately, the given link no longer works, and I now must make an Azure account, and provide billing information to get access to the key I need (even though it is free)...
+            - Thus, I will be writing the code, but not using it.
+
+## Turning Website Content into Password Gold
+[[bhp_wordlist.py](bhp_wordlist.py)]
