@@ -14,3 +14,8 @@ dependencies = [
     "requests>=2.31.0",
     "scapy>=2.7.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "chapter_07/bhptrojan",
+]
