@@ -10,7 +10,8 @@ This repository contains the various notes and scripts I write based on the book
 - [Chapter 05 Notes](chapter_05/notes.md)
 - [Chapter 06 Notes](chapter_06/notes.md)
 - [Chapter 07 Notes](chapter_07/notes.md)
-- [Chapter 08 Notes](chapter_08\notes.md)
+- [Chapter 08 Notes](chapter_08/notes.md)
+- [Chapter 09 Notes](chapter_09/notes.md)
 
 # Remarks
 - Using the uv package manager.
