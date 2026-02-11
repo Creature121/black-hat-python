@@ -13,4 +13,6 @@ This repository contains the various notes and scripts I write based on the book
 - [Chapter 08 Notes](chapter_08\notes.md)
 
 # Remarks
+- Using the uv package manager.
 - I have used both VMWare Workstation as well as Windows WSL while writing this code.
+- Need to add respective links to the remarks later.
