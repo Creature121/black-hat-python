@@ -22,3 +22,14 @@
 
 ## Email Exfiltration
 [[email_exfil.py](email_exfil.py)]
+
+## File Transfer Exfiltration
+[[transmit_exfil.py](transmit_exfil.py)]
+
+## Exfiltration via a Web Server
+[[paste_exfil.py](paste_exfil.py)]
+- Internet Explorer COM automation
+  - `Iexplore.exe` process is typically trusted and whitelisted.
+
+## Putting it All Together
+[[exfil.py](exfil.py)]

