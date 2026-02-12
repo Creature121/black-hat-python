@@ -12,10 +12,12 @@ dependencies = [
     "opencv-python>=4.13.0.90",
     "paramiko>=3.5.1",
     "pycryptodomex>=3.23.0",
+    "pyinstaller>=5.13.2",
     "pywin32>=308",
     "pywinhook>=1.6.2",
     "requests>=2.31.0",
     "scapy>=2.7.0",
+    "wmi>=1.5.1",
 ]
 
 [tool.uv.workspace]
