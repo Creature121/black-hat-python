@@ -17,6 +17,7 @@ dependencies = [
     "pywinhook>=1.6.2",
     "requests>=2.31.0",
     "scapy>=2.7.0",
+    "volatility3>=2.8.0",
     "wmi>=1.5.1",
 ]
 
